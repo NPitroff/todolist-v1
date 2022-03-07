@@ -10,7 +10,6 @@ app.get("/", function(req, res){
     res.sendFile(__dirname +"/weekend.html");
   } else {
     res.sendFile(__dirname +"/weekday.html");
-    res.send();
   }
 
 });
