@@ -7,10 +7,9 @@ app.get("/", function(req, res){
   // logic to find the date
   var today = new Date();
   if (today.getDay() === 6 || 0){
-    res.write("<h1>Congrats! Its the Weekend!</h1>");
+    res.sendFile(__dirname +"/weekend.html");
   } else {
-    res.write("<p>You gotta get to work!</p>");
-    res.write("<h1>Drat, still the work week eh?</h1>");
+    res.sendFile(__dirname +"/weekday.html");
     res.send();
   }
 
