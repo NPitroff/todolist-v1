@@ -14,7 +14,7 @@ app.get("/", function(req, res){
 
 });
 
-
+// pick up at EJS lesson
 
 
 
