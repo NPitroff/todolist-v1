@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 // use ejs
-app.use('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 app.get("/", function(req, res){
   // logic to find the date
