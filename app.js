@@ -9,9 +9,13 @@ app.use('view engine', 'ejs');
 app.get("/", function(req, res){
   // logic to find the date
   var today = new Date();
-  if (today.getDay() === 6 || 0){
+  var currentDay = today.getDate();
+  var day = "";
+  if (currentDay === 6 || 0){
+    day = "Weekend";
     res.sendFile(__dirname +"/weekend.html");
   } else {
+    day = "Weekday";
     res.sendFile(__dirname +"/weekday.html");
   }
 
