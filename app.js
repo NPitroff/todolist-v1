@@ -56,6 +56,8 @@ switch (currentDay) {
   //   day = "Saturday";
   // }
     res.render("list", {kindOfDay: day});
+
+    // pick up the ejs lessons
 });
 
 
