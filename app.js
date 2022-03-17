@@ -16,8 +16,9 @@ var options = {
   weekday: 'long',
   day: 'numeric',
   month: 'long'
-}
+};
 
+var day = today.toLocaleDateString("en-US", options);
 
 // // switch statement
 // switch (currentDay) {
